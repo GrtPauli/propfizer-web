@@ -8,10 +8,12 @@ import home_h1 from "./home-h1.png";
 import home_h2 from "./home-h2.png";
 import home_h3 from "./home-h3.png";
 import about_h1 from './about-h1.png'
+import auth_bg from './auth-bg.png'
 
 const images = {
   logo,
   logo_white,
+  auth_bg,
   home: {
     home_hero_bg,
     home_about_us,
