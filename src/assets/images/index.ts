@@ -9,6 +9,8 @@ import home_h2 from "./home-h2.png";
 import home_h3 from "./home-h3.png";
 import about_h1 from './about-h1.png'
 import auth_bg from './auth-bg.png'
+import dashboard_h1 from './dashbaord/dashboard-h1.png'
+import dashboard_h2 from './dashbaord/dashboard-h2.png'
 
 const images = {
   logo,
@@ -25,6 +27,10 @@ const images = {
   },
   about: {
     about_h1
+  }, 
+  dashboard: {
+    dashboard_h1,
+    dashboard_h2
   }
 };
 

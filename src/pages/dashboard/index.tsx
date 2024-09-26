@@ -1,4 +1,5 @@
 import { DashboardLayout } from "../../layouts";
+import { DashboardSectionOne, DashboardSectionTwo } from "./components";
 
 export default function DashboardPage() {
   const headerPrefix = () => {
@@ -13,9 +14,11 @@ export default function DashboardPage() {
   return (
    <DashboardLayout
     headerPrefix={headerPrefix()}
+    activeLink="dashboard"
    >
     <div>
-
+      <DashboardSectionOne/>
+      <DashboardSectionTwo/>
     </div>
    </DashboardLayout>
   )
