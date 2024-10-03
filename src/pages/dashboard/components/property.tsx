@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import images from "../../../assets/images";
 
 export default function PropertyItem() {
@@ -12,7 +13,7 @@ export default function PropertyItem() {
       </div>
 
       <div className="mt-3 text-primary">
-        <p className="font-bold mb-1">Property Name</p>
+        <Link to='/listings/8908' className="font-bold mb-1 hover:underline">Property Name</Link>
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-1">
             <svg

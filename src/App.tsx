@@ -1,8 +1,7 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { AboutUsPage, DashboardPage, HomePage, RentalsPage } from './pages';
+import { AboutUsPage, AccountSettingsPage, DashboardPage, HomePage, PaymentsPage, PropertyDetailPage, PropertyListingPage, RentalDetailPage, RentalsPage } from './pages';
 import LoginPage from './pages/auth/login';
 import RegisterPage from './pages/auth/register';
-
 
 const router = createBrowserRouter([
   {
@@ -27,10 +26,27 @@ const router = createBrowserRouter([
   },
   {
     path: "/rentals",
-    element: <RentalsPage />,
+    children: [
+      {index: true, element: <RentalsPage />},
+      {path: ':id', element: <RentalDetailPage/>}
+    ]
+  },
+  {
+    path: "/payments",
+    element: <PaymentsPage />,
+  },
+  {
+    path: "/listings",
+    children: [
+      {index: true, element: <PropertyListingPage />},
+      {path: ':id', element: <PropertyDetailPage/>}
+    ]
+  },
+  {
+    path: "/account-settings",
+    element: <AccountSettingsPage />,
   },
 ]);
-
 
 function App() {
   return <RouterProvider router={router} />

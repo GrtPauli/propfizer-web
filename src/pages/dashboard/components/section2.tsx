@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import PropertyItem from "./property";
 
 export default function DashboardSectionTwo() {
@@ -9,9 +10,9 @@ export default function DashboardSectionTwo() {
                 <p className="text-sm">Search for properties and spaces you may like</p>
             </div>
 
-            <button className="bg-primary text-white rounded-xl px-8 py-3 text-sm font-semibold">
+            <Link to='/listings' className="bg-primary text-white rounded-xl px-8 py-3 text-sm font-semibold">
                 Browse
-            </button>
+            </Link>
         </div>
 
         <div className="grid grid-cols-2 gap-8 mt-5">

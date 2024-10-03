@@ -13,7 +13,7 @@ interface Props {
 export default function DashboardLayout({ subTitle, title, children, headerPrefix, activeLink }: Props) {
   return (
     <div className="flex">
-      <div className="bg-primary w-[22%] h-screen p-10 fixed">
+      <div className="bg-primary w-[22%] h-screen p-8 fixed">
         <img src={images.logo_white} className="w-[130px]" />
 
         <div className="mt-10">
