@@ -7,7 +7,7 @@ export default function AccountSettingsPage() {
       title="Account Settings"
       subTitle="Manage your account"
     >
-      
+      <></>
     </DashboardLayout>
   );
 }
