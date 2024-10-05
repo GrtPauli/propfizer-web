@@ -1,6 +1,13 @@
-export default function Empty() {
+import { ReactNode } from "react";
+
+interface Props {
+  title?: string
+  suffix?: ReactNode
+}
+
+export default function Empty({ suffix, title }: Props) {
   return (
-    <div className="flex flex-col h-full justify-center items-center gap-10 flex-1 font-semibold text-xl">
+    <div className="flex flex-col h-full justify-center items-center gap-5 flex-1 font-semibold text-xl">
       <p>Oh snap! there’s nothing here</p>
       <svg
         width="174"
@@ -28,7 +35,8 @@ export default function Empty() {
           />
         </defs>
       </svg>
-      <p className="text-[#4E4C4C6B]">it looks like you don’t have any booking yet</p>
+      <p className="text-[#4E4C4C6B] text-center max-w-[400px]">{title}</p>
+      {suffix}
     </div>
   );
 }

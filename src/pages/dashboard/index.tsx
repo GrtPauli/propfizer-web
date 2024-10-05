@@ -1,7 +1,13 @@
+import { useEffect, useState } from "react";
 import { DashboardLayout } from "../../layouts";
 import { DashboardSectionOne, DashboardSectionTwo } from "./components";
 
 export default function DashboardPage() {
+  const [userType, setUserType] = useState<'tenant' | 'landlord'>('landlord')
+  useEffect(() => {
+    setUserType('tenant')
+  }, [])
+
   const headerPrefix = () => {
     return (
       <div className="flex items-center gap-5">
@@ -17,8 +23,8 @@ export default function DashboardPage() {
     activeLink="dashboard"
    >
     <div>
-      <DashboardSectionOne/>
-      <DashboardSectionTwo/>
+      <DashboardSectionOne userType={userType}/>
+      <DashboardSectionTwo userType={userType}/>
     </div>
    </DashboardLayout>
   )

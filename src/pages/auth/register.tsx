@@ -12,6 +12,7 @@ export default function RegisterPage() {
                 <TextInput
                     label="Email"
                     placeholder="Enter your email"
+                    className="h-[60px]"
                 />
                 <TextInput
                     label="Password"

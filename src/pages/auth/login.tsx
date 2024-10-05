@@ -12,10 +12,12 @@ export default function LoginPage() {
                 <TextInput
                     label="Email"
                     placeholder="Enter your email"
+                    className="h-[60px]"
                 />
                 <TextInput
                     label="Password"
                     placeholder="Enter your password"
+                    className="h-[60px]"
                 />
                 <div className="flex justify-end">
                     <button className="text-primary font-normal text-sm">

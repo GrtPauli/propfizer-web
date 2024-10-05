@@ -14,8 +14,12 @@ import dashboard_h2 from './dashbaord/dashboard-h2.png'
 import detail_h1 from './detail-h1.png'
 import detail_h2 from './detail-h2.png'
 import map from './map.png'
+import get_started from './get-started.png'
+import tenant from './tenant.png'
 
 const images = {
+  tenant,
+  get_started,
   map,
   detail_h1,
   detail_h2,
